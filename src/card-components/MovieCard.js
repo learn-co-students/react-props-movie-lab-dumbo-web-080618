@@ -33,7 +33,7 @@ export default class MovieCard extends Component {
     // debugger
     return (
       <div className="movie-card">
-        <CardFront style={{backgroundImage: `url(${posterMap[this.props.poster]})`}}/>
+        <CardFront poster= {posterMap[this.props.poster]} />
         <CardBack genres = {this.props.genres} title={this.props.title} IMDBRating={this.props.IMDBRating}/>
       </div>
     );
