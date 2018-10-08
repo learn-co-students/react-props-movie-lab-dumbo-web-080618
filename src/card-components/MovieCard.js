@@ -30,14 +30,27 @@ const posterMap = {
 export default class MovieCard extends Component {
 
   render() {
+    // debugger
     return (
       <div className="movie-card">
-        {/* which component should receive which props? */}
-        <CardFront />
-        <CardBack />
+        <CardFront style={{backgroundImage: `url(${posterMap[this.props.poster]})`}}/>
+        <CardBack genres = {this.props.genres} title={this.props.title} IMDBRating={this.props.IMDBRating}/>
       </div>
-    )
+    );
   }
 }
+
+
+MovieCard.defaultProps = {
+  title: 'Unknown',
+  poster: 'default',
+  IMDBRating: null,
+  genres: ['No Genre(s) Found']
+}
+
+// title receives an 'Unknown' string
+// IMDBRating simply gets assigned to null
+// genres should receive a value that will work with our CardBack component's rendering method for genres. The screen should read: 'No Genre(s) Found'
+// poster should get the string default
 
 // Don't forget your default props!
