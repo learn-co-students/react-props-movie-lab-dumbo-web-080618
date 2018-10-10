@@ -29,6 +29,8 @@ const posterMap = {
 
 export default class MovieCard extends Component {
 
+  // let {title, poster, IMDBRating, genres} = this.props.movie
+
   render() {
     return (
       <div className="movie-card">
@@ -37,7 +39,7 @@ export default class MovieCard extends Component {
           title={this.props.title}
           IMDBRating={this.props.IMDBRating}
           genres={this.props.genres}
-          />
+        />
       </div>
     )
   }
