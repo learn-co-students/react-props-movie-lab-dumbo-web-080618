@@ -34,5 +34,20 @@
     "enzyme-adapter-react-16": "^1.1.1",
     "mocha": "^5.2.0",
     "sinon": "^6.1.0"
-  }
+  },
+  "description": "## Objectives",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcelis13/react-props-movie-lab-dumbo-web-080618.git"
+  },
+  "author": "Madeline",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcelis13/react-props-movie-lab-dumbo-web-080618/issues"
+  },
+  "homepage": "https://github.com/mcelis13/react-props-movie-lab-dumbo-web-080618#readme"
 }
